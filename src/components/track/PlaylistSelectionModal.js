@@ -12,7 +12,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { BlurView } from 'expo-blur';
-import { useAudio } from '../context/AudioContext';
+import { useAudio } from '../../context/AudioContext';
 
 const PlaylistSelectionModal = ({ visible, onClose, onSelect, track }) => {
   const { playlists } = useAudio();

@@ -2,9 +2,9 @@ import React, { useState, useCallback, useRef, useMemo } from 'react';
 import { View, StyleSheet, FlatList, TouchableOpacity, Text, Image, Dimensions } from 'react-native';
 import { useAudio } from '../../context/AudioContext';
 
-import LoadingSpinner from '../LoadingSpinner';
-import ErrorView from '../ErrorView';
-import ScreenTransition from '../ScreenTransition';
+import LoadingSpinner from '../common/LoadingSpinner';
+import ErrorView from '../common/ErrorView';
+import ScreenTransition from '../common/ScreenTransition';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 const NUM_COLUMNS = 2;

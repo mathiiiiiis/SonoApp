@@ -10,8 +10,8 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { BlurView } from 'expo-blur';
-import AlbumArt from './AlbumArt';
-import { useAudio } from '../context/AudioContext';
+import AlbumArt from '../album/AlbumArt';
+import { useAudio } from '../../context/AudioContext';
 
 const TrackContextMenu = ({
   isVisible,

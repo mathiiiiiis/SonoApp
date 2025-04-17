@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { View, Image, StyleSheet, ActivityIndicator } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { getAlbumArtwork } from '../utils/artworkHelper';
-import { getCachedArtwork } from '../utils/cacheManager';
+import { getAlbumArtwork } from '../../utils/artworkHelper';
+import { getCachedArtwork } from '../../utils/cacheManager';
 
 // Global artwork cache to store loaded artwork
 const globalArtworkCache = new Map();

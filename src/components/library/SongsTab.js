@@ -1,13 +1,13 @@
 import React, { useState, useCallback, useEffect, useRef, useMemo } from 'react';
 import { View, StyleSheet, FlatList, TouchableOpacity, Text, Modal, Animated } from 'react-native';
 import { useAudio } from '../../context/AudioContext';
-import TrackItem from '../TrackItem';
+import TrackItem from '../track/TrackItem';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import LoadingSpinner from '../LoadingSpinner';
-import ErrorView from '../ErrorView';
-import ScreenTransition from '../ScreenTransition';
+import LoadingSpinner from '../common/LoadingSpinner';
+import ErrorView from '../common/ErrorView';
+import ScreenTransition from '../common/ScreenTransition';
 
 // Sort options
 const SORT_OPTIONS = [

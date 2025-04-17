@@ -11,12 +11,12 @@ import {
   TouchableWithoutFeedback,
   ActivityIndicator,
 } from 'react-native';
-import { useAudio } from '../context/AudioContext';
+import { useAudio } from '../../context/AudioContext';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-import AlbumArt from '../components/AlbumArt';
+import AlbumArt from '../../components/album/AlbumArt';
 
 const MiniPlayer = ({ onPress }) => {
   const navigation = useNavigation();

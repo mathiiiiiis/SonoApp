@@ -8,10 +8,10 @@ import {
   TouchableWithoutFeedback,
 } from 'react-native';
 import { Ionicons, Feather } from '@expo/vector-icons';
-import { useAudio } from '../context/AudioContext';
+import { useAudio } from '../../context/AudioContext';
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
-import AlbumArt from './AlbumArt';
+import AlbumArt from '../album/AlbumArt';
 
 const TrackItem = ({
   track,

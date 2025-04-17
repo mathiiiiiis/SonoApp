@@ -9,25 +9,25 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { Audio } from 'expo-av';
 // eslint-disable-next-line no-unused-vars
-import { getSongsAsync, requestPermissionsAsync } from './utils/mediaLibrary';
+import { getSongsAsync, requestPermissionsAsync } from './src/utils/mediaLibrary';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as SQLite from 'expo-sqlite';
 
 // Import screens
-import HomeScreen from './screens/HomeScreen';
-import SearchScreen from './screens/SearchScreen';
-import LibraryScreen from './screens/LibraryScreen';
-import NowPlayingScreen from './screens/NowPlayingScreen';
-import PlaylistDetailsScreen from './screens/PlaylistDetailsScreen';
+import HomeScreen from './src/screens/HomeScreen';
+import SearchScreen from './src/screens/SearchScreen';
+import LibraryScreen from './src/screens/LibraryScreen';
+import NowPlayingScreen from './src/screens/NowPlayingScreen';
+import PlaylistDetailsScreen from './src/screens/PlaylistDetailsScreen';
 // eslint-disable-next-line no-unused-vars
-import SettingsScreen from './screens/SettingsScreen';
-import ArtistScreen from './screens/ArtistScreen';
+import SettingsScreen from './src/screens/SettingsScreen';
+import ArtistScreen from './src/screens/ArtistScreen';
 
 // Import components
 import MiniPlayer from './src/components/player/MiniPlayer';
 
 // Import context provider
-import { AudioProvider, useAudio } from './context/AudioContext';
+import { AudioProvider, useAudio } from './src/context/AudioContext';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -179,7 +179,7 @@ const LoadingScreen = () => {
         ]}
       >
         <Image
-          source={require('./assets/splash-icon.png')}
+          source={require('./src/assets/splash-icon.png')}
           style={styles.splashIcon}
           resizeMode="contain"
         />
@@ -230,7 +230,7 @@ const App = () => {
     return (
       <View style={styles.errorContainer}>
         <Image
-          source={require('./assets/splash-icon.png')}
+          source={require('./src/assets/splash-icon.png')}
           style={styles.splashIcon}
           resizeMode="contain"
         />

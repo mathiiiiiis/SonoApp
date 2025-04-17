@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import Slider from '@react-native-community/slider';
-import { AudioContext } from '../context/AudioContext';
-import { EQUALIZER_BANDS, EQUALIZER_PRESETS } from '../utils/equalizer';
+import { AudioContext } from '../../context/AudioContext';
+import { EQUALIZER_BANDS, EQUALIZER_PRESETS } from '../../utils/equalizer';
 
 const EqualizerControls = () => {
   const audioContext = useContext(AudioContext);
