@@ -2,7 +2,8 @@ import * as MediaLibrary from 'expo-media-library';
 import { getAlbumArtwork } from './artworkHelper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const parseMetadata = (filename) => {
+// Export parseMetadata for use in other files
+export const parseMetadata = (filename) => {
   const name = filename.replace(/\.[^/.]+$/, '');
 
   const patterns = [

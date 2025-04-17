@@ -1,5 +1,5 @@
 import * as FileSystem from 'expo-file-system';
-import { getCachedArtwork, cacheArtwork } from './cacheManager';
+import { getCachedArtwork, cacheArtwork } from './artworkCache';
 import { base64Encode } from './encodingHelper';
 
 /**

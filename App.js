@@ -11,7 +11,8 @@ import { Audio } from 'expo-av';
 // eslint-disable-next-line no-unused-vars
 import { getSongsAsync, requestPermissionsAsync } from './src/utils/mediaLibrary';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import * as SQLite from 'expo-sqlite';
+// eslint-disable-next-line no-unused-vars
+import { openDatabase } from 'expo-sqlite';
 
 // Import screens
 import HomeScreen from './src/screens/HomeScreen';
@@ -31,10 +32,6 @@ import { AudioProvider, useAudio } from './src/context/AudioContext';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
-
-// Initialize SQLite database
-// eslint-disable-next-line no-unused-vars
-const db = SQLite.openDatabase('main.db');
 
 // eslint-disable-next-line no-unused-vars
 const generateColorFromString = (str) => {
